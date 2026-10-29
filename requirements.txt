@@ -1,0 +1,8 @@
+# Global keybind listener (all platforms)
+pynput>=1.7.6
+
+# Click backend: Windows
+pydirectinput>=1.0.4; sys_platform == "win32"
+
+# Click backend: Linux (virtual mouse via uinput)
+evdev>=1.6.1; sys_platform == "linux"
